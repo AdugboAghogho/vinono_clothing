@@ -17,7 +17,7 @@ export function Navbar() {
           href="/"
           className="text-2xl font-black tracking-tighter text-zinc-100"
         >
-          KELS.<span className="text-zinc-500">WEAR</span>
+          Vinono.<span className="text-zinc-500">Clothing</span>
         </Link>
 
         {/* --- CENTER: NAV LINKS --- */}

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,9 +9,44 @@ import {
   Facebook,
   Youtube,
   ArrowRight,
+  Loader2,
+  CheckCircle2
 } from "lucide-react";
 
 const SectionNewsletter = () => {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus("loading");
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to subscribe");
+      }
+
+      setStatus("success");
+      setMessage(data.message);
+      setEmail(""); // Clear the input
+    } catch (error: any) {
+      setStatus("error");
+      setMessage(error.message);
+    }
+  };
+
   return (
     <footer className="container mx-auto mt-24">
       <div className="bg-[#0f0f0f] rounded-[2rem] overflow-hidden relative shadow-2xl border border-zinc-800">
@@ -30,26 +65,48 @@ const SectionNewsletter = () => {
                 <span className="text-zinc-500">Your First Order.</span>
               </h2>
               <p className="text-gray-400 text-lg">
-                Join the Vinono Clothing movement. Be the first to know about new
+                Join the KELS.WEAR movement. Be the first to know about new
                 drops, exclusive sales, and style inspiration.
               </p>
             </div>
 
-            <div className="w-full max-w-md flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="h-14 rounded-full bg-white/5 border border-white/10 px-8 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all"
-              />
-              <Button className="h-14 rounded-full px-8 bg-white text-black hover:bg-zinc-200 font-bold text-base transition-transform active:scale-95">
-                Subscribe
-              </Button>
+            <div className="w-full max-w-md">
+              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={status === "loading" || status === "success"}
+                  required
+                  placeholder="Enter your email address"
+                  className="w-full h-14 rounded-full bg-white/5 border border-white/10 px-8 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all disabled:opacity-50"
+                />
+                <Button 
+                  type="submit" 
+                  disabled={status === "loading" || status === "success"}
+                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50 min-w-[140px]"
+                >
+                  {status === "loading" ? (
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                  ) : status === "success" ? (
+                    <CheckCircle2 className="w-5 h-5 text-green-600" />
+                  ) : (
+                    "Subscribe"
+                  )}
+                </Button>
+              </form>
+              
+              {/* Feedback Message */}
+              {message && (
+                <p className={`mt-3 text-sm font-medium ${status === "success" ? "text-green-400" : "text-red-400"}`}>
+                  {message}
+                </p>
+              )}
             </div>
           </div>
 
           {/* --- MIDDLE SECTION: LINKS GRID --- */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
-            {/* Brand Column */}
             <div className="col-span-2 md:col-span-1 flex flex-col items-start">
               <Link
                 href="/"

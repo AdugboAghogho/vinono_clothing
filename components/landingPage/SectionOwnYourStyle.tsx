@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import ownyourstyle from "../../public/Edited/edite (1).jpg";
+import ownyourstyle from "../../public/img/1 (1).jpg";
 
 export function SectionOwnYourStyle() {
   return (

@@ -8,6 +8,9 @@ import HeroBanner from "@/components/shopPage/HeroBanner";
 import ProductGrid from "@/components/shopPage/ProductGrid";
 import { useUser } from "@clerk/nextjs";
 import { Search, ShoppingBag } from "lucide-react";
+import image from "@/public/img/1 (4).jpg";
+import SectionNewsletter from "@/components/landingPage/SectionNewsletter";
+
 
 export default function ShopClient({
   products,
@@ -16,7 +19,7 @@ export default function ShopClient({
   products: any[];
   categories: any[];
 }) {
-  const { user } = useUser();
+  // const { user } = useUser();
 
   return (
     <div className="flex max-w-400 mx-auto">
@@ -27,21 +30,23 @@ export default function ShopClient({
           <div className="flex justify-between items-center w-full md:hidden">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-orange-100 overflow-hidden relative">
-                {user?.imageUrl && (
+                {/* {user?.imageUrl && ( */}
                   <Link href="/profile">
                     <Image
-                      src={user.imageUrl}
+                      // src={user.imageUrl || image}
+                      src={image}
                       alt="User"
                       fill
                       className="object-cover"
                     />
                   </Link>
-                )}
+                {/* )} */}
               </div>
               <div>
                 <p className="text-xs text-gray-400">Welcome</p>
                 <p className="font-bold text-sm">
-                  {user?.fullName || "Valued Customer"}
+                  {"Valued Customer"}
+                  {/* {user?.fullName || "Valued Customer"} */}
                 </p>
               </div>
             </div>
@@ -83,6 +88,9 @@ export default function ShopClient({
         <ProductGrid products={products} categories={categories} />
 
         <Banner />
+
+        <SectionNewsletter />
+
       </main>
     </div>
   );

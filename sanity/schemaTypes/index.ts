@@ -4,6 +4,6 @@ import order from './order'
 import ordersDetails from './ordersDetails'
 import user from './user'
 import blog from './blog'
-import banner from './banner'
+import subscriber from './subscriber'
 
-export const schemaTypes = [banner, category, product, order, ordersDetails, user, blog]
+export const schemaTypes = [subscriber, category, product, order, ordersDetails, user, blog]

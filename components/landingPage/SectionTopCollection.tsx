@@ -2,7 +2,7 @@ import React from "react";
 import { CollectionCard } from "@/components/ui/CollectionCard";
 import { ArrowRight, Star } from "lucide-react";
 import { Button } from "../ui/button";
-import collection from "../../public/Edited/edite (2).jpg";
+import collection from "../../public/img/1 (2).jpg";
 
 const SectionTopCollection = () => {
   return (

@@ -10,17 +10,19 @@ import {
   ShoppingCart,
 } from "lucide-react";
 import Loader from "../../components/ui/Loader";
-import { useUser } from "@clerk/nextjs";
+import image from "@/public/img/1 (4).jpg";
+
+// import { useUser } from "@clerk/nextjs";
 
 const SideBar = () => {
-  const { user, isLoaded, isSignedIn } = useUser();
-  if (!isLoaded)
-    return (
-      <div className="p-8 text-gray-400">
-        <Loader />
-      </div>
-    );
-  if (!isSignedIn) return null;
+  // const { user, isLoaded, isSignedIn } = useUser();
+  // if (!isLoaded)
+  //   return (
+  //     <div className="p-8 text-gray-400">
+  //       <Loader />
+  //     </div>
+  //   );
+  // if (!isSignedIn) return null;
 
   return (
     <div className="flex max-w-400 mx-auto">
@@ -28,7 +30,8 @@ const SideBar = () => {
         <div className="flex items-center gap-3 mb-12">
           <div className="w-10 h-10 rounded-full bg-orange-100 overflow-hidden relative">
             <Image
-              src={user.imageUrl}
+              src={image}
+              // src={user.imageUrl}
               alt="User"
               fill
               className="object-cover"
@@ -38,7 +41,8 @@ const SideBar = () => {
           <div>
             <p className="text-xs text-gray-400">Welcome</p>
             <p className="font-bold text-sm">
-              {user.fullName || "Valued Customer"}
+              {/* {user.fullName || "Valued Customer"} */}
+              {"Valued Customer"}
             </p>
           </div>
         </div>

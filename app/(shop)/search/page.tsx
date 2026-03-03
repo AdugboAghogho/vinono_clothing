@@ -47,7 +47,7 @@ export default function SearchPage() {
   }, [query]);
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] p-4 md:p-8">
+    <div className="min-h-screen max-w-400 mx-auto bg-[#FDFBF7] p-4 md:p-8">
         <button onClick={() => router.back()} className="w-10 h-10 mb-10 hover:bg-gray-100 scale-108 rounded-full cursor-pointer shadow-xl flex items-center justify-center transition-colors">
           <ArrowLeft className="w-5 h-5" />
         </button>
@@ -61,7 +61,7 @@ export default function SearchPage() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search products (e.g. 'Jacket', 'Summer')..."
           autoFocus
-          className="w-full bg-white h-14 pl-12 pr-12 rounded-2xl shadow-sm outline-none focus:ring-2 focus:ring-orange-200 text-lg"
+          className="w-full bg-white h-14 pl-12 pr-12 rounded-3xl shadow-sm outline-none focus:ring-2 focus:ring-orange-200 text-lg"
         />
         {query && (
           <button
@@ -152,7 +152,7 @@ export default function SearchPage() {
           </div>
         </>
       )}
-    <SectionNewsletter />
+      <SectionNewsletter />
     </div>
 
   );

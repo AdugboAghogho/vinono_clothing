@@ -13,9 +13,9 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 // 2. Import Your Local Images
-import banner1 from "@/public/Edited/edite (30).jpg";
-import banner2 from "@/public/Edited/edite (25).jpg"; // Make sure these files exist
-import banner3 from "@/public/Edited/edite (15).jpg"; // or rename to match your files
+import banner1 from "@/public/img/1 (2).jpg";
+import banner2 from "@/public/img/1 (5).jpg"; // Make sure these files exist
+import banner3 from "@/public/img/1 (6).jpg"; // or rename to match your files
 
 // 3. Define Banner Data using the imported images
 const BANNER_SLIDES = [

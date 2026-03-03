@@ -41,16 +41,20 @@ export default function RelatedProducts({
                 slidesPerView: 3.2,
                 spaceBetween: 20,
               },
-              1024: {
-                slidesPerView: 8,
-                spaceBetween: 24,
+              1034: {
+                slidesPerView: 4.2,
+                spaceBetween: 20,
+              },
+              1280: {
+                slidesPerView: 5.2, 
+                spaceBetween: 20,
               },
             }}
             className="w-full !pb-10" // Add padding bottom for shadow
           >
             {relatedProducts.map((item) => (
               <SwiperSlide key={item._id} className="h-auto">
-                <div className="group relative bg-white border border-gray-100 rounded-2xl p-3 shadow-xl hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+                <div className=" h-full flex flex-col relative bg-white border border-gray-100 rounded-2xl p-3 shadow-xl hover:shadow-lg transition-all duration-300 ">
                   <div className="relative aspect-[3/4] bg-gray-50 rounded-2xl overflow-hidden mb-3">
                     <Link href={`/product/${item.slug}`}>
                       {item.imageUrl && (

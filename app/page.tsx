@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Star } from "lucide-react";
-import image1 from "../public/Edited/image.jpg.jpg";
+import image1 from "../public/img/1 (3).jpg";
 import SectionHero from "@/components/landingPage/SectionHero";
 import SectionTopCollection from "@/components/landingPage/SectionTopCollection";
 import SectionNewsletter from "@/components/landingPage/SectionNewsletter";

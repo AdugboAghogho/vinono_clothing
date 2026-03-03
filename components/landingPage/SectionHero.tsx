@@ -4,12 +4,16 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
-// 1. Import Swiper components and styles
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import silde1 from "@/public/img/1 (6).jpg"; 
+import silde2 from "@/public/img/1 (7).jpg"; 
+import silde3 from "@/public/img/1 (8).jpg"; 
+import silde4 from "@/public/img/1 (9).jpg"; 
+import silde5 from "@/public/img/1 (10).jpg"; 
 
 // 2. Define your slides data
 const HERO_SLIDES = [
@@ -25,10 +29,8 @@ const HERO_SLIDES = [
       "Find the unique pieces that ignite your confidence. From rare vintage finds to modern essentials, we help you uncover the spark that turns every outfit into a statement.",
     buttonText: "Shop Collection",
     link: "/shop",
-    imageMain:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070",
-    imageSmall:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000",
+    imageMain: silde1,
+    imageSmall: silde2,
   },
   {
     id: 2,
@@ -42,10 +44,8 @@ const HERO_SLIDES = [
       "Embrace the heat with breathable fabrics and bold colors. Our new summer line is designed to keep you cool while looking effortlessly hot.",
     buttonText: "View Lookbook",
     link: "/shop",
-    imageMain:
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070",
-    imageSmall:
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1000",
+    imageMain: silde3,
+    imageSmall: silde4,
   },
   {
     id: 3,
@@ -59,10 +59,8 @@ const HERO_SLIDES = [
       "Premium wool blends and structured coats that define sophistication. Limited edition pieces available now.",
     buttonText: "Shop Now",
     link: "/shop",
-    imageMain:
-      "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=2070",
-    imageSmall:
-      "https://images.unsplash.com/photo-1542272617-08f086303294?q=80&w=1000",
+    imageMain: silde5,
+    imageSmall: silde1,
   },
 ];
 
