@@ -30,7 +30,7 @@ const SectionNewsletter = () => {
                 <span className="text-zinc-500">Your First Order.</span>
               </h2>
               <p className="text-gray-400 text-lg">
-                Join the KELS.WEAR movement. Be the first to know about new
+                Join the Vinono Clothing movement. Be the first to know about new
                 drops, exclusive sales, and style inspiration.
               </p>
             </div>

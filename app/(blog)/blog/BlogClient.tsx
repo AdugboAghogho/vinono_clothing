@@ -50,7 +50,7 @@ export default function BlogClient({ posts }: { posts: any[] }) {
               Our Blog
             </h1>
             <p className="text-gray-500 text-lg max-w-md">
-              Stories, trends, and insights from the world of KELS.WEAR.
+              Stories, trends, and insights from the world of Vinono Clothing.
             </p>
           </div>
 

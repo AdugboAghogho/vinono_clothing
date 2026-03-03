@@ -3,7 +3,7 @@ export function SectionBrandStory() {
     <section className="container mx-auto px-4 py-20 shadow-2xl rounded-2xl">
       <div className="max-w-4xl mx-auto text-center space-y-6">
         <span className="text-sm font-bold tracking-widest text-gray-400 uppercase">
-          The Kels.Wear Story
+          The Vinono Clothing Story
         </span>
         <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-gray-900">
           "We believe fashion isn't just about clothes—it's about the feeling of

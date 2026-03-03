@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import MobileNav from "@/components/shopPage/MobileNav";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,17 +11,17 @@ const inter = Inter({ subsets: ["latin"] });
 // 1. ADVANCED SEO & AI SEARCH OPTIMIZATION
 // ==========================================
 export const metadata: Metadata = {
-  title: "KELS.WEAR | Premium Modern Fashion",
+  title: "Vinono Clothing | Premium Modern Fashion",
   description: "Curated fashion for the modern individual. Discover our latest collections of premium streetwear, footwear, and accessories.",
   keywords: ["fashion", "streetwear", "clothing brand", "Kels Footwear", "sneakers", "modern style", "Lagos fashion"],
   authors: [{ name: "Kels Development" }],
   
   // OpenGraph helps AI bots (like ChatGPT) show rich previews of your site
   openGraph: {
-    title: "KELS.WEAR | Premium Modern Fashion",
+    title: "Vinono Clothing | Premium Modern Fashion",
     description: "Curated fashion for the modern individual.",
     url: "https://yourwebsite.com", // TODO: Replace with your actual domain
-    siteName: "KELS.WEAR",
+    siteName: "Vinono Clothing",
     images: [
       {
         url: "/og-image.jpg", // TODO: Add an image named og-image.jpg to your public folder
@@ -61,7 +60,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
-    "name": "KELS.WEAR",
+    "name": "Vinono Clothing",
     "description": "Curated fashion and premium footwear for the modern individual.",
     "url": "https://yourwebsite.com", // TODO: Update
     "telephone": "+2340000000000", // TODO: Update with your business number
@@ -73,7 +72,7 @@ export default function RootLayout({
   };
 
   return (
-    <ClerkProvider>
+    
       <html lang="en">
         <body className={`${inter.className} pb-20 md:pb-0 relative`}>
           
@@ -90,7 +89,7 @@ export default function RootLayout({
 
           {/* 3. FLOATING WHATSAPP BUTTON                */}
           <a
-            href="https://wa.me/2347084838253?text=Hello%20KELS.WEAR!%20I%20would%20like%20to%20make%20an%20inquiry."
+            href="https://wa.me/2347084838253?text=Hello%20Vinono Clothing!%20I%20would%20like%20to%20make%20an%20inquiry."
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-100 bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-xl shadow-[#25D366]/30 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 flex items-center justify-center"
@@ -104,6 +103,6 @@ export default function RootLayout({
 
         </body>
       </html>
-    </ClerkProvider>
+    <
   );
 }

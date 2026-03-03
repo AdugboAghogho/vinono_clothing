@@ -20,7 +20,7 @@ const FAQS = [
       "Yes, we ship to over 100 countries worldwide. International shipping rates are calculated at checkout. Please note that duties and taxes may apply depending on your location.",
   },
   {
-    question: "How do I care for Kels.Wear fabrics?",
+    question: "How do I care for Vinono Clothing fabrics?",
     answer:
       "Most of our pieces are machine washable on a cold, gentle cycle. For our premium wool and linen collections, we recommend dry cleaning to maintain the fabric's integrity and shape.",
   },
