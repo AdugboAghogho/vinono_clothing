@@ -63,7 +63,7 @@ export default async function Home() {
                   </p>
 
                   <Link
-                    href="/shop/product/nike-air"
+                    href="/product/shrit-3"
                     className="rounded-full mt-4 px-6 p-2 h-20 text-white bg-black shadow-xl shadow-gray-400  hover:bg-gray-800 cursor-pointer"
                   >
                     Shop Now
@@ -94,7 +94,7 @@ export default async function Home() {
                   </p>
 
                   <Link
-                    href="/shop/product/tee"
+                    href="/shop"
                     className="rounded-full mt-4 px-6 p-2 h-20 text-white bg-black shadow-xl shadow-gray-400  hover:bg-gray-800 cursor-pointer"
                   >
                     Shop Now
@@ -105,23 +105,14 @@ export default async function Home() {
 
             {/* Large Feature Card */}
             <div className="relative rounded-3xl overflow-hidden min-h-100">
-              <Image
-                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000"
-                alt="Model"
-                fill
-                className="object-cover"
-              />
+              <Image src={image1} alt="Model" fill className="object-cover" />
 
               <div className="absolute inset-0 bg-black/20" />
 
               <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl max-w-sm">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-8 h-8 rounded-full bg-gray-200 overflow-hidden relative">
-                    <Image
-                      src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000"
-                      alt="User"
-                      fill
-                    />
+                    <Image src={image1} alt="User" fill />
                   </div>
 
                   <span className="text-sm font-semibold">Sarah Jenkins</span>

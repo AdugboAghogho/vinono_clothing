@@ -7,6 +7,11 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Navigation } from "swiper/modules";
 import { ShoppingBag, ArrowRight } from "lucide-react";
+import silde1 from "@/public/img/1 (1).jpg";
+import silde2 from "@/public/img/1 (2).jpg";
+import silde3 from "@/public/img/1 (3).jpg";
+import silde4 from "@/public/img/1 (9).jpg";
+import silde5 from "@/public/img/1 (10).jpg";
 
 const FEATURED_PRODUCTS = [
   {
@@ -14,40 +19,35 @@ const FEATURED_PRODUCTS = [
     title: "Casual Formal",
     price: "120.25 USD",
     tag: "Premium Collection",
-    image:
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1000&auto=format&fit=crop",
+    image: silde1,
   },
   {
     id: 2,
     title: "Urban Edit",
     price: "95.00 USD",
     tag: "New Season",
-    image:
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1000&auto=format&fit=crop",
+    image: silde2,
   },
   {
     id: 3,
     title: "Summer Linen",
     price: "150.00 USD",
     tag: "Best Seller",
-    image:
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1000&auto=format&fit=crop",
+    image: silde3,
   },
   {
     id: 4,
     title: "Signature Suit",
     price: "299.99 USD",
     tag: "Exclusive",
-    image:
-      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=1000&auto=format&fit=crop",
+    image: silde4,
   },
   {
     id: 5,
     title: "Weekend Vibe",
     price: "85.50 USD",
     tag: "Limited",
-    image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1000&auto=format&fit=crop",
+    image: silde5,
   },
 ];
 

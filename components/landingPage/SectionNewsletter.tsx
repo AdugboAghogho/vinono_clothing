@@ -10,12 +10,14 @@ import {
   Youtube,
   ArrowRight,
   Loader2,
-  CheckCircle2
+  CheckCircle2,
 } from "lucide-react";
 
 const SectionNewsletter = () => {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
   const [message, setMessage] = useState("");
 
   const handleSubscribe = async (e: React.FormEvent) => {
@@ -48,8 +50,8 @@ const SectionNewsletter = () => {
   };
 
   return (
-    <footer className="container mx-auto mt-24">
-      <div className="bg-[#0f0f0f] rounded-[2rem] overflow-hidden relative shadow-2xl border border-zinc-800">
+    <footer className="">
+      <div className="bg-[#0f0f0f]  rounded-4xl overflow-hidden relative shadow-2xl border border-zinc-800">
         {/* --- Background Effects --- */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-[-10%] left-[20%] w-96 h-96 bg-orange-500/10 blur-[120px] rounded-full" />
@@ -71,7 +73,10 @@ const SectionNewsletter = () => {
             </div>
 
             <div className="w-full max-w-md">
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-3">
+              <form
+                onSubmit={handleSubscribe}
+                className="flex flex-col sm:flex-row gap-3"
+              >
                 <input
                   type="email"
                   value={email}
@@ -81,10 +86,10 @@ const SectionNewsletter = () => {
                   placeholder="Enter your email address"
                   className="w-full h-14 rounded-full bg-white/5 border border-white/10 px-8 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all disabled:opacity-50"
                 />
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   disabled={status === "loading" || status === "success"}
-                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50 min-w-[140px]"
+                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50 min-w-35"
                 >
                   {status === "loading" ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
@@ -95,10 +100,12 @@ const SectionNewsletter = () => {
                   )}
                 </Button>
               </form>
-              
+
               {/* Feedback Message */}
               {message && (
-                <p className={`mt-3 text-sm font-medium ${status === "success" ? "text-green-400" : "text-red-400"}`}>
+                <p
+                  className={`mt-3 text-sm font-medium ${status === "success" ? "text-green-400" : "text-red-400"}`}
+                >
                   {message}
                 </p>
               )}
