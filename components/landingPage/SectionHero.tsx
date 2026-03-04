@@ -106,7 +106,7 @@ const SectionHero = () => {
                     <Link href={slide.link}>
                       <Button
                         size="lg"
-                        className="rounded-full px-8 h-14 text-base bg-black text-white shadow-xl hover:bg-gray-800 cursor-pointer transition-transform hover:scale-105"
+                        className="rounded-full px-8 h-14 font-bold text-base bg-gray-300 text-black shadow-xl shadow-gray-900/50 hover:bg-gray-500 cursor-pointer transition-transform hover:scale-105"
                       >
                         {slide.buttonText}
                       </Button>
@@ -117,7 +117,7 @@ const SectionHero = () => {
                 {/* Hero Images Grid */}
                 <div className="relative h-[400px] md:h-[600px] w-full md:block">
                   {/* Main large image */}
-                  <div className="absolute right-0 top-0 w-[80%] h-[90%] rounded-3xl overflow-hidden shadow-2xl">
+                  <div className="absolute right-0 top-0 w-[80%] h-[90%] rounded-3xl overflow-hidden shadow-2xl shadow-gray-900/50 animate-in fade-in duration-1000">
                     <Image
                       src={slide.imageMain}
                       alt="Fashion Model"

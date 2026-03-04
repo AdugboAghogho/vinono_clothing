@@ -53,9 +53,9 @@ const FEATURED_PRODUCTS = [
 
 export function SectionFeatured() {
   return (
-    <section className="py-24 pt-0 bg-white overflow-hidden shadow-xl">
+    <section className="py-24 pt-0 overflow-hidden shadow-xl">
       <div className="p-8 text-center mb-16">
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none">
+        <h2 className="text-5xl text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
           FEATURED COLLECTION
         </h2>
       </div>
@@ -124,12 +124,12 @@ export function SectionFeatured() {
                   <div className="absolute bottom-8 left-0 right-0 text-center text-white p-4">
                     {/* Floating Vertical Text Decoration */}
                     <p className="text-sm font-light tracking-widest uppercase mb-2 text-white/80 writing-mode-vertical">
-                      {product.title}
+                      {/* {product.title} */}
                     </p>
 
                     <h3 className="text-xl font-bold mb-1">Start from</h3>
                     <p className="text-2xl font-serif italic mb-6">
-                      {product.price}
+                      {/* {product.price} */}
                     </p>
 
                     {/* Circular Button hanging off the bottom (Visual trick) */}

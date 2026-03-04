@@ -12,16 +12,16 @@ const SectionTopCollection = () => {
     <section className="container mx-auto px-4">
       <div className="flex justify-between items-end mb-10">
         <div className="p-8">
-          <h2 className="text-4xl md:text-7xl font-bold tracking-tighter leading-none">
+          <h2 className="text-4xl text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
             Curated Collections
           </h2>
 
-          <p className="text-gray-500 mt-2">
+          <p className="text-gray-300 mt-2">
             Hand-picked styles for the season.
           </p>
         </div>
 
-        <Button variant="ghost" className="hidden md:flex gap-2">
+        <Button variant="ghost" className="hidden text-gray-300 md:flex gap-2">
           Explore all categories <ArrowRight className="w-4 h-4" />
         </Button>
       </div>

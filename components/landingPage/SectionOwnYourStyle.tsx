@@ -22,7 +22,7 @@ export function SectionOwnYourStyle() {
             <Link href="/shop">
               <Button
                 size="lg"
-                className="rounded-full px-8 h-14 text-base bg-gray-300 text-black shadow-xl hover:bg-gray-800 cursor-pointer "
+                className="rounded-full px-8 h-14 font-bold text-base bg-gray-300 text-black shadow-xl shadow-gray-900/50 hover:bg-gray-800 cursor-pointer "
               >
                 Shop Now
               </Button>
