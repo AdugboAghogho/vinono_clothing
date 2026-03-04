@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-body {
-  background: #0f0f0fc5;
-}
 .container {
   width: 100%;
   @media (width >= 40rem /* 640px */) {

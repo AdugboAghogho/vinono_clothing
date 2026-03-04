@@ -3,6 +3,9 @@ import { CollectionCard } from "@/components/ui/CollectionCard";
 import { ArrowRight, Star } from "lucide-react";
 import { Button } from "../ui/button";
 import collection from "../../public/img/1 (2).jpg";
+import silde1 from "@/public/img/1 (3).jpg";
+import silde2 from "@/public/img/1 (7).jpg";
+import silde5 from "@/public/img/1 (10).jpg";
 
 const SectionTopCollection = () => {
   return (
@@ -25,19 +28,19 @@ const SectionTopCollection = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <CollectionCard
-          image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop"
+          image={silde2.src}
           title="Urban Footwear"
           subtitle="Sneakers & Boots"
         />
 
         <CollectionCard
-          image="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=1000&auto=format&fit=crop"
+          image={silde1.src}
           title="Summer Breeze"
           subtitle="Lightweight Linens"
         />
 
         <CollectionCard
-          image="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1000&auto=format&fit=crop"
+          image={silde5.src}
           title="Formal Edit"
           subtitle="Office Essentials"
         />
