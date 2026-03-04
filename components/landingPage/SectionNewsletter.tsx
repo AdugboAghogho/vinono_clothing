@@ -67,8 +67,8 @@ const SectionNewsletter = () => {
                 <span className="text-zinc-500">Your First Order.</span>
               </h2>
               <p className="text-gray-400 text-lg">
-                Join the KELS.WEAR movement. Be the first to know about new
-                drops, exclusive sales, and style inspiration.
+                Join the Vinono Clothing movement. Be the first to know about
+                new drops, exclusive sales, and style inspiration.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ const SectionNewsletter = () => {
                 href="/"
                 className="text-2xl font-bold text-white mb-6 tracking-tighter"
               >
-                KELS.<span className="text-zinc-600">WEAR</span>
+                Vinono<span className="text-zinc-600">Clothing</span>
               </Link>
               <p className="text-zinc-500 text-sm mb-6 max-w-xs">
                 Redefining modern streetwear with comfort and sustainability in

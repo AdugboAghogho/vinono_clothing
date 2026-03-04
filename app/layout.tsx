@@ -84,7 +84,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.className} pb-20 md:pb-0 relative`}>
+        <body
+          className={`${inter.className} pb-20 bg-[#0f0f0f]/90 md:pb-0 relative`}
+        >
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
