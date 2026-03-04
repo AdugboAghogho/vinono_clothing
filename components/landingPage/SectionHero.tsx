@@ -83,9 +83,7 @@ const SectionHero = () => {
             // Custom styling for the dots to match your brand
             renderBullet: function (index, className) {
               return (
-                '<span class="' +
-                className +
-                ' !bg-orange-500 !w-3 !h-3"></span>'
+                '<span class="' + className + ' bg-gray-500! !w-3 !h-3"></span>'
               );
             },
           }}
