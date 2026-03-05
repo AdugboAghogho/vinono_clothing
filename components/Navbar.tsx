@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Search, ShoppingBag, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/store/useCartStore";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Navbar() {
   const { items } = useCartStore();
@@ -70,6 +71,8 @@ export function Navbar() {
               )}
             </Button>
           </Link>
+
+          <ThemeToggle />
         </div>
       </div>
     </nav>

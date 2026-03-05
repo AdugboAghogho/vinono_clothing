@@ -9,11 +9,11 @@ import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import silde1 from "@/public/img/1 (6).jpg";
-import silde2 from "@/public/img/1 (7).jpg";
-import silde3 from "@/public/img/1 (8).jpg";
-import silde4 from "@/public/img/1 (9).jpg";
-import silde5 from "@/public/img/1 (10).jpg";
+import silde1 from "@/public/img/w (9).jpeg";
+import silde2 from "@/public/img/w (2).jpeg";
+import silde3 from "@/public/img/w (5).jpg";
+import silde4 from "@/public/img/w (4).jpeg";
+import silde5 from "@/public/img/w (6).jpeg";
 
 // 2. Define your slides data
 const HERO_SLIDES = [
@@ -94,11 +94,11 @@ const SectionHero = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-6 md:p-12 pb-16">
                 {/* Text Content */}
                 <div className="p-4 md:p-8 space-y-6 z-10">
-                  <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-gray-300">
+                  <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight  text-gray-900 dark:text-gray-300">
                     {slide.title}
                   </h1>
 
-                  <p className="text-lg text-gray-100 max-w-md leading-relaxed">
+                  <p className="text-lg  text-gray-600 dark:text-gray-300 max-w-md leading-relaxed">
                     {slide.description}
                   </p>
 

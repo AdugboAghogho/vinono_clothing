@@ -7,11 +7,11 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Navigation } from "swiper/modules";
 import { ShoppingBag, ArrowRight } from "lucide-react";
-import silde1 from "@/public/img/1 (1).jpg";
-import silde2 from "@/public/img/1 (2).jpg";
-import silde3 from "@/public/img/1 (3).jpg";
-import silde4 from "@/public/img/1 (9).jpg";
-import silde5 from "@/public/img/1 (10).jpg";
+import silde1 from "@/public/img/3d (1).jpg";
+import silde2 from "@/public/img/3d (2).jpg";
+import silde3 from "@/public/img/3d (4).jpg";
+import silde4 from "@/public/img/3d (6).jpg";
+import silde5 from "@/public/img/3d (10).jpg";
 
 const FEATURED_PRODUCTS = [
   {
@@ -55,7 +55,7 @@ export function SectionFeatured() {
   return (
     <section className="py-24 pt-0 overflow-hidden shadow-xl">
       <div className="p-8 text-center mb-16">
-        <h2 className="text-5xl text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
+        <h2 className="text-5xl text-black dark:text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
           FEATURED COLLECTION
         </h2>
       </div>
@@ -89,7 +89,7 @@ export function SectionFeatured() {
             <SwiperSlide key={product.id} className="max-w-75 md:max-w-87.5">
               {({ isActive }) => (
                 <div
-                  className={`relative aspect-3/5 rounded-3xl overflow-hidden transition-all duration-500 shadow-xl ${
+                  className={`relative aspect-3/5 rounded-3xl overflow-hidden transition-all duration-500 shadow-xl shadow-gray-900/50 ${
                     isActive
                       ? "scale-80 opacity-100 ring-4 ring-black/5"
                       : "scale-70  rounded-4xl"
@@ -116,7 +116,7 @@ export function SectionFeatured() {
                   {/* Vertical Text (Right Side) */}
                   <div className="absolute top-8 right-6 flex flex-col items-center gap-2">
                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-black -rotate-90 origin-right translate-y-12 whitespace-nowrap">
-                      {product.tag}
+                      {/* {product.tag} */}
                     </span>
                   </div>
 

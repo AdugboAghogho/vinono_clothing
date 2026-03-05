@@ -9,9 +9,9 @@ import {
   User,
   ShoppingCart,
 } from "lucide-react";
-import Loader from "../../components/ui/Loader";
-import image from "@/public/img/1 (4).jpg";
+import image from "@/public/img/3d (3).jpg";
 
+// import Loader from "../../components/ui/Loader";
 // import { useUser } from "@clerk/nextjs";
 
 const SideBar = () => {
@@ -41,8 +41,8 @@ const SideBar = () => {
           <div>
             <p className="text-xs text-gray-400">Welcome</p>
             <p className="font-bold text-sm">
-              {/* {user.fullName || "Valued Customer"} */}
               {"Valued Customer"}
+              {/* {user.fullName || "Valued Customer"} */}
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ const SideBar = () => {
             className="shadow-xl"
           />
           <SidebarLink icon={Filter} label="Categories" className="shadow-xl" />
-          
+
           <SidebarLink
             href="/profile"
             icon={User}

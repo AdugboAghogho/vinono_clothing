@@ -8,7 +8,7 @@ import HeroBanner from "@/components/shopPage/HeroBanner";
 import ProductGrid from "@/components/shopPage/ProductGrid";
 import { useUser } from "@clerk/nextjs";
 import { Search, ShoppingBag } from "lucide-react";
-import image from "@/public/img/1 (4).jpg";
+import image from "@/public/img/2 (2).jpeg";
 import SectionNewsletter from "@/components/landingPage/SectionNewsletter";
 
 

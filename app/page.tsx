@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Star } from "lucide-react";
-import image1 from "../public/img/1 (3).jpg";
+import image1 from "../public/img/2 (3).jpeg";
 import SectionHero from "@/components/landingPage/SectionHero";
 import SectionTopCollection from "@/components/landingPage/SectionTopCollection";
 import SectionNewsletter from "@/components/landingPage/SectionNewsletter";
@@ -19,7 +19,7 @@ export default async function Home() {
   const posts = await client.fetch(allBlogs);
 
   return (
-    <div className="flex flex-col gap-20 pb-20">
+    <div className="flex flex-col gap-20 pb-5">
       {/* 1. HERO SECTION */}
       <SectionHero />
 
@@ -38,7 +38,9 @@ export default async function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-8">
-              <h2 className="text-4xl font-bold">Trending this Week</h2>
+              <h2 className="text-4xl  text-black dark:text-gray-300 font-bold">
+                Trending this Week
+              </h2>
               {/* Feature Item */}
               <div className="flex gap-6 items-start bg-white p-4 rounded-xl shadow-sm">
                 <div className="w-24 h-24 relative rounded-lg overflow-hidden shrink-0">
@@ -55,7 +57,9 @@ export default async function Home() {
                     BEST SELLER
                   </p>
 
-                  <h4 className="font-bold text-lg">Nike Air Max Revival</h4>
+                  <h4 className="font-bold text-black text-lg">
+                    Nike Air Max Revival
+                  </h4>
 
                   <p className="text-sm text-gray-500 mt-1 mb-3 line-clamp-2">
                     The classic silhouette returns with sustainable materials
@@ -86,7 +90,9 @@ export default async function Home() {
                     NEW DROP
                   </p>
 
-                  <h4 className="font-bold text-lg">Oversized Heavy Tee</h4>
+                  <h4 className="font-bold text-black text-lg">
+                    Oversized Heavy Tee
+                  </h4>
 
                   <p className="text-sm text-gray-500 mt-1 mb-3 line-clamp-2">
                     Designed for the modern streetwear aesthetic. 100% heavy

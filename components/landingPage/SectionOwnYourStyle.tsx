@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import ownyourstyle from "../../public/img/1 (1).jpg";
+import ownyourstyle from "../../public/img/w (1).jpeg";
 
 export function SectionOwnYourStyle() {
   return (
@@ -11,11 +11,11 @@ export function SectionOwnYourStyle() {
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-150 items-center">
           {/* Text Content */}
           <div className="p-8 md:p-20 space-y-8">
-            <h2 className="text-5xl text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
+            <h2 className="text-5xl text-black dark:text-gray-300 md:text-7xl font-bold tracking-tighter leading-none">
               Own Your <br />
               Style
             </h2>
-            <p className="text-lg text-gray-300 max-w-md leading-relaxed">
+            <p className="text-lg text-black dark:text-gray-300 max-w-md leading-relaxed">
               Exclusive pieces, crafted for confidence and effortless elegance.
               Don't wait—your perfect look is just a click away.
             </p>

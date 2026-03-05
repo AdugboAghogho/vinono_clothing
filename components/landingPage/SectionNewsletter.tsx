@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
 import {
   Instagram,
   Twitter,
@@ -11,6 +12,7 @@ import {
   ArrowRight,
   Loader2,
   CheckCircle2,
+  Search,
 } from "lucide-react";
 
 const SectionNewsletter = () => {

@@ -33,10 +33,10 @@ export function SectionFAQ() {
     <section className="py-24 shadow-2xl ">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl text-gray-300 mb-4 md:text-7xl font-bold tracking-tighter leading-none">
+          <h2 className="text-3xl  text-black dark:text-gray-300 mb-4 md:text-7xl font-bold tracking-tighter leading-none">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-300 text-3xl md:text-[19px] font-serif mb-4">
+          <p className=" text-black dark:text-gray-300 text-3xl md:text-[19px] font-serif mb-4">
             Everything you need to know about our products and services.
           </p>
         </div>
@@ -45,7 +45,7 @@ export function SectionFAQ() {
           {FAQS.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-2xl overflow-hidden shadow-xl transition-all duration-300 hover:border-black/30"
+              className="border border-gray-200 rounded-2xl overflow-hidden shadow-xl shadow-gray-900/50 transition-all duration-300 hover:border-black/30"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
