@@ -30,28 +30,16 @@ const SectionTopCollection = () => {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <CollectionCard
-          image={silde2.src}
-          title="Urban Footwear"
-          subtitle="Sneakers & Boots"
-        />
+        <CollectionCard image={silde2.src} title="VN Shorts" subtitle="" />
 
-        <CollectionCard
-          image={silde1.src}
-          title="Summer Breeze"
-          subtitle="Lightweight Linens"
-        />
+        <CollectionCard image={silde1.src} title="NV Tees" subtitle="" />
 
-        <CollectionCard
-          image={silde5.src}
-          title="Formal Edit"
-          subtitle="Office Essentials"
-        />
+        <CollectionCard image={silde5.src} title="VN Tops" subtitle="" />
 
         <CollectionCard
           image={collection.src}
-          title="Accessories"
-          subtitle="The Final Touch"
+          title="Sleveeless Tank"
+          subtitle=""
         />
       </div>
 

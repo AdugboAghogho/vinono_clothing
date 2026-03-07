@@ -58,7 +58,7 @@ export default async function Home() {
                   </p>
 
                   <h4 className="font-bold text-black text-lg">
-                    Nike Air Max Revival
+                    baskball jersey
                   </h4>
 
                   <p className="text-sm text-gray-500 mt-1 mb-3 line-clamp-2">
@@ -91,7 +91,7 @@ export default async function Home() {
                   </p>
 
                   <h4 className="font-bold text-black text-lg">
-                    Oversized Heavy Tee
+                    VN Oversized Tee black
                   </h4>
 
                   <p className="text-sm text-gray-500 mt-1 mb-3 line-clamp-2">
