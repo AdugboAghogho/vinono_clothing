@@ -37,7 +37,6 @@ export default function BlogClient({ posts }: { posts: any[] }) {
 
   return (
     <div className="min-h-screen bg-[#FDFBF7]">
-      {/* HEADER SECTION */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 sm:mt-10">
         <header className="pb-8 border-b border-gray-200/60 mb-10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <Link href="/" className="mt-5 md:hidden">

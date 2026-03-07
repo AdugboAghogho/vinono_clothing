@@ -74,7 +74,7 @@ const ProductGrid = ({
 
                 <div className="mt-auto flex items-center justify-between">
                   <span className="text-lg font-bold text-gray-900">
-                    ${product.price}
+                    ₦{product.price}
                   </span>
 
                   <button

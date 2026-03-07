@@ -86,12 +86,12 @@ const SectionNewsletter = () => {
                   disabled={status === "loading" || status === "success"}
                   required
                   placeholder="Enter your email address"
-                  className="w-full h-14 rounded-full bg-white/5 border border-white/10 px-8 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all disabled:opacity-50"
+                  className="h-14 rounded-full px-8 bg-white/5 border border-white/10 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-transparent transition-all disabled:opacity-50"
                 />
                 <Button
                   type="submit"
                   disabled={status === "loading" || status === "success"}
-                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50 min-w-35"
+                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50"
                 >
                   {status === "loading" ? (
                     <Loader2 className="w-5 h-5 animate-spin" />

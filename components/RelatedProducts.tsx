@@ -46,7 +46,7 @@ export default function RelatedProducts({
                 spaceBetween: 20,
               },
               1280: {
-                slidesPerView: 5.2, 
+                slidesPerView: 5.2,
                 spaceBetween: 20,
               },
             }}
@@ -54,7 +54,7 @@ export default function RelatedProducts({
           >
             {relatedProducts.map((item) => (
               <SwiperSlide key={item._id} className="h-auto">
-                <div className=" h-full flex flex-col relative bg-white border border-gray-100 rounded-2xl p-3 shadow-xl hover:shadow-lg transition-all duration-300 ">
+                <div className=" h-full flex flex-col relative bg-white border border-gray-100 cursor-pointer rounded-2xl p-3 shadow-xl hover:shadow-lg transition-all duration-300 ">
                   <div className="relative aspect-[3/4] bg-gray-50 rounded-2xl overflow-hidden mb-3">
                     <Link href={`/product/${item.slug}`}>
                       {item.imageUrl && (
@@ -78,7 +78,7 @@ export default function RelatedProducts({
 
                     <div className="flex items-center justify-between mt-auto">
                       <p className="font-bold text-gray-900 text-lg">
-                        ${item.price}
+                        ₦{item.price}
                       </p>
 
                       {/* Add to Cart Button */}

@@ -82,7 +82,7 @@ export default function RootLayout({
       {/* FIX 1: Add suppressHydrationWarning so next-themes doesn't crash React */}
       <html lang="en" suppressHydrationWarning>
         <body
-          className={`${inter.className} pb-20 md:pb-0 relative bg-white text-gray-900 dark:bg-[#272727fb] dark:text-gray-200 transition-colors duration-300`}
+          className={`${inter.className} pb-20 md:pb-0 relative bg-white/80 text-gray-900 dark:bg-[#272727fb] dark:text-gray-200 transition-colors duration-300`}
         >
           <ThemeProvider
             attribute="class"

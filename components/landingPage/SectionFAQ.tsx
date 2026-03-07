@@ -30,45 +30,47 @@ export function SectionFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 shadow-2xl ">
-      <div className="container mx-auto px-4 max-w-3xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl  text-black dark:text-gray-300 mb-4 md:text-7xl font-bold tracking-tighter leading-none">
+    // Reduced padding to make it shorter vertically
+    <section className="py-8 md:py-16">
+      {/* Reduced max-width to max-w-2xl to make it narrower and less "full screen" */}
+      <div className="container mx-auto px-4 max-w-2xl">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-3 text-gray-900 dark:text-gray-300">
             Frequently Asked Questions
           </h2>
-          <p className=" text-black dark:text-gray-300 text-3xl md:text-[19px] font-serif mb-4">
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 font-serif">
             Everything you need to know about our products and services.
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {FAQS.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-2xl overflow-hidden shadow-xl shadow-gray-900/50 transition-all duration-300 hover:border-black/30"
+              className="border border-gray-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-xl shadow-gray-900/50 bg-white dark:bg-[#111] hover:border-gray-300 dark:hover:border-zinc-600 transition-colors duration-300"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left bg-white"
+                className="w-full flex items-center justify-between p-5 text-left focus:outline-none"
               >
-                <span className="font-medium text-lg text-gray-900">
+                <span className="font-medium text-base md:text-lg text-gray-900 dark:text-gray-200">
                   {faq.question}
                 </span>
                 {openIndex === index ? (
-                  <Minus className="w-5 h-5 text-gray-500 shrink-0" />
+                  <Minus className="w-5 h-5 text-orange-500 shrink-0" />
                 ) : (
-                  <Plus className="w-5 h-5 text-gray-500 shrink-0" />
+                  <Plus className="w-5 h-5 text-gray-400 shrink-0" />
                 )}
               </button>
 
               <div
-                className={`overflow-hidden bg-white transition-all duration-300 ease-in-out ${
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   openIndex === index
-                    ? "max-h-48 opacity-100"
+                    ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="p-6 pt-0 text-gray-600 leading-relaxed">
+                <div className="p-5 pt-0 text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                   {faq.answer}
                 </div>
               </div>

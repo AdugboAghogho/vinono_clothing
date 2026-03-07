@@ -6,16 +6,14 @@ import { ArrowLeft, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SectionNewsletter from "@/components/landingPage/SectionNewsletter";
 
-
 export default function NotFound() {
   const router = useRouter();
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#FDFBF7] text-center px-4">
-      
       {/* Big 404 Text */}
       <h1 className="text-9xl font-black text-gray-200">404</h1>
-      
+
       <div className="-mt-12 z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Page Not Found
@@ -24,7 +22,7 @@ export default function NotFound() {
           Oops! The page you are looking for doesn't exist or has been moved.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex mb-10 flex-col sm:flex-row gap-4 justify-center">
           {/* --- GO BACK BUTTON (Restores previous page) --- */}
           <Button
             onClick={() => router.back()}
