@@ -36,6 +36,16 @@ const SectionNewsletter = () => {
         body: JSON.stringify({ email }),
       });
 
+      // --- NEW SAFETY CHECK ---
+      // Check if the response is actually JSON before trying to parse it
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error(
+          "Server error: Check if app/api/subscribe/route.ts exists.",
+        );
+      }
+      // ------------------------
+
       const data = await response.json();
 
       if (!response.ok) {
@@ -91,7 +101,7 @@ const SectionNewsletter = () => {
                 <Button
                   type="submit"
                   disabled={status === "loading" || status === "success"}
-                  className="h-14 rounded-full px-8 bg-white text-black cursor-pointer hover:bg-zinc-200 scale-108 font-bold text-base transition-transform active:scale-95 disabled:opacity-50"
+              className="w-full sm:w-40 flex items-center justify-center h-14 rounded-full px-8 bg-white text-black hover:bg-zinc-200 font-bold text-base transition-transform active:scale-95 disabled:opacity-50"
                 >
                   {status === "loading" ? (
                     <Loader2 className="w-5 h-5 animate-spin" />
