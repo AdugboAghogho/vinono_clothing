@@ -4,7 +4,7 @@ import { ArrowRight, Star } from "lucide-react";
 import { Button } from "../ui/button";
 import collection from "../../public/img/w (10).jpeg";
 import silde1 from "@/public/img/2 (1).jpeg";
-import silde2 from "@/public/img/2 (11).jpeg";
+import silde2 from "@/public/img/hoodies (1).jpeg";
 import silde5 from "@/public/img/w (9).jpeg";
 
 const SectionTopCollection = () => {
@@ -34,7 +34,7 @@ const SectionTopCollection = () => {
 
         <CollectionCard image={silde1.src} title="NV Tees" subtitle="" />
 
-        <CollectionCard image={silde5.src} title="VN Tops" subtitle="" />
+        <CollectionCard image={silde5.src} title="VN Hoodies" subtitle="" />
 
         <CollectionCard
           image={collection.src}

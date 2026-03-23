@@ -33,10 +33,10 @@ export default defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'Design', value: 'Design'},
-          {title: 'Fashion', value: 'Fashion'},
-          {title: 'Sustainability', value: 'Sustainability'},
-          {title: 'Style Tips', value: 'Style Tips'},
+          {title: 'Brand Philosophy', value: 'Brand Philosophy'},
+          {title: 'Craftsmanship', value: 'Craftsmanship'},
+          {title: 'Lifestyle', value: 'Lifestyle'},
+          {title: 'Style Guide', value: 'Style Guide'},
         ],
       },
     }),

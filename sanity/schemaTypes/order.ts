@@ -54,9 +54,11 @@ export default {
   ],
   preview: {
     select: {title: 'customerName', subtitle: 'totalPrice'},
-    prepare({title, subtitle}) {
+    // Accept a generic 'selection' object, then destructure it inside!
+    prepare(selection: Record<string, any>) {
+      const {title, subtitle} = selection
       return {
-        title: `Order: ${title}`,
+        title: `Order: ${title || 'Unknown'}`,
         subtitle: `₦${subtitle ? subtitle.toFixed(2) : '0.00'}`,
       }
     },
