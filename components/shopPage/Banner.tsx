@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import banner from "@/public/img/3d (4).jpg";
 
@@ -11,10 +12,12 @@ const HeroBanner = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-1">
           Vinono.Clothing
         </h2>
-        <p className="text-4xl font-black text-orange-500 mb-4">20% Off</p>
-        <Button className="w-fit bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 shadow-lg shadow-orange-300 border-none">
-          Shop Now
-        </Button>
+        <p className="text-4xl font-black text-red-600 mb-4">20% Off</p>
+        <Link href='/product/nv-tee-royal-blue'>
+          <Button className="w-fit bg-red-600 hover:bg-red-800 text-white rounded-full px-8 shadow-lg shadow-orange-300 border-none">
+            Shop Now
+          </Button>
+        </Link>
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ const ProductGrid = ({
       <div className="flex gap-3 overflow-x-auto pb-4 mb-6 no-scrollbar">
         <button
           onClick={() => setActiveCategory("All")}
-          className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === "All" ? "bg-orange-500 text-white" : "bg-white border"}`}
+          className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === "All" ? "bg-red-600 text-white" : "bg-white border"}`}
         >
           All
         </button>
@@ -39,7 +39,7 @@ const ProductGrid = ({
             onClick={() => setActiveCategory(cat.title)}
             className={`px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
               activeCategory === cat.title
-                ? "bg-orange-500 text-white shadow-lg"
+                ? "bg-red-600 text-white shadow-lg"
                 : "bg-white text-gray-500 border border-gray-100"
             }`}
           >
@@ -74,11 +74,11 @@ const ProductGrid = ({
 
                 <div className="mt-auto flex items-center justify-between">
                   <span className="text-lg font-bold text-gray-900">
-                    ₦{product.price}
+                    ₦{product.price},000
                   </span>
 
                   <button
-                    className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-orange-200 hover:scale-110 transition-transform"
+                    className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white shadow-lg shadow-orange-200 hover:scale-110 transition-transform"
                     onClick={(e) => {
                       e.preventDefault(); // <--- THIS STOPS THE REDIRECT
                       addItem(product);

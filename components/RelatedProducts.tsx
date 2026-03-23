@@ -78,7 +78,7 @@ export default function RelatedProducts({
 
                     <div className="flex items-center justify-between mt-auto">
                       <p className="font-bold text-gray-900 text-lg">
-                        ₦{item.price}
+                        ₦{item.price},000
                       </p>
 
                       {/* Add to Cart Button */}
@@ -95,7 +95,7 @@ export default function RelatedProducts({
                             color: "Default",
                           });
                         }}
-                        className="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors shadow-lg active:scale-90"
+                        className="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors shadow-lg active:scale-90"
                       >
                         <ShoppingBag className="w-4 h-4" />
                       </button>

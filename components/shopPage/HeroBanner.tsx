@@ -17,27 +17,26 @@ import banner1 from "@/public/img/3d (2).jpg";
 import banner2 from "@/public/img/3d (5).jpg"; 
 import banner3 from "@/public/img/3d (6).jpg"; 
 
-// 3. Define Banner Data using the imported images
 const BANNER_SLIDES = [
   {
     id: 1,
-    title: "Burberry",
+    title: "Vinono",
     offer: "50% Off",
     link: "/shop",
-    image: banner1, // Using the imported variable
+    image: banner1, 
   },
   {
     id: 2,
     title: "New Season",
     offer: "Fresh Drops",
-    link: "/shop",
+    link: "/product/nv-tee-olive-green",
     image: banner2,
   },
   {
     id: 3,
     title: "Summer Sale",
     offer: "Flat 30%",
-    link: "/shop",
+    link: "/product/v-tee-white",
     image: banner3,
   },
 ];
@@ -58,7 +57,7 @@ const HeroBanner = () => {
           clickable: true,
           renderBullet: function (index, className) {
             return (
-              '<span class="' + className + ' !bg-orange-500 !w-2 !h-2"></span>'
+              '<span class="' + className + ' !bg-red-600 !w-2 !h-2"></span>'
             );
           },
         }}
@@ -82,12 +81,12 @@ const HeroBanner = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mb-1 animate-in slide-in-from-left-4 duration-700">
                   {slide.title}
                 </h2>
-                <p className="text-4xl font-black text-orange-500 mb-4 animate-in slide-in-from-left-4 duration-700 delay-100">
+                <p className="text-4xl font-black text-red-600 mb-4 animate-in slide-in-from-left-4 duration-700 delay-100">
                   {slide.offer}
                 </p>
 
                 <Link href={slide.link}>
-                  <Button className="w-fit bg-orange-500 hover:bg-orange-600 text-white rounded-full px-8 shadow-lg shadow-orange-300 border-none animate-in fade-in duration-1000 delay-200">
+                  <Button className="w-fit bg-red-700 hover:bg-orange-600 text-white rounded-full px-8 shadow-lg shadow-orange-300 border-none animate-in fade-in duration-1000 delay-200">
                     Shop Now
                   </Button>
                 </Link>

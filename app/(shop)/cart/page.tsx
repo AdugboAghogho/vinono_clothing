@@ -96,7 +96,7 @@ export default function CartPage() {
 
                   <div className="flex items-center justify-between mt-3">
                     <p className="font-bold text-gray-900">
-                      ${(item.price * item.quantity).toFixed(2)}
+                      ₦{(item.price * item.quantity).toFixed(3)}
                     </p>
 
                     {/* Compact Quantity Control */}
@@ -138,18 +138,18 @@ export default function CartPage() {
                 <div className="flex justify-between text-gray-500">
                   <span>Subtotal</span>
                   <span className="font-bold text-gray-900">
-                    ${totalPrice.toFixed(2)}
+                   ₦{totalPrice.toFixed(3)}
                   </span>
                 </div>
                 <div className="flex justify-between text-gray-500">
                   <span>Delivery Fee</span>
                   <span className="font-bold text-gray-900">
-                    ${shipping.toFixed(2)}
+                   ₦{shipping.toFixed(3)}
                   </span>
                 </div>
                 <div className="flex justify-between text-gray-500">
                   <span>Discount</span>
-                  <span className="font-bold text-green-600">-$0.00</span>
+                  <span className="font-bold text-green-600">-₦0.00</span>
                 </div>
 
                 <div className="h-px bg-gray-100 my-4"></div>
@@ -160,14 +160,14 @@ export default function CartPage() {
                     Total
                   </span>
                   <span className="text-xl font-black text-gray-900">
-                    ${finalTotal.toFixed(2)}
+                    ₦{finalTotal.toFixed(3)}
                   </span>
                 </div>
               </div>
 
               <Link href="/checkout" className="block w-full">
                 <Button className="w-full h-14 bg-[#2ECC71] hover:bg-[#27AE60] text-white rounded-full font-bold text-lg shadow-lg shadow-green-100 transition-transform active:scale-95 flex items-center justify-center gap-2">
-                  Checkout for ${finalTotal.toFixed(2)}
+                  Checkout for ₦{finalTotal.toFixed(3)}
                 </Button>
               </Link>
             </div>

@@ -73,7 +73,7 @@ const SideBar = () => {
 
         {/* Logout / Bottom */}
         <div className="mt-auto">
-          <div className="bg-orange-500 text-white p-4 rounded-2xl shadow-lg shadow-orange-200">
+          <div className="bg-red-600 text-white p-4 rounded-2xl shadow-lg shadow-orange-200">
             <p className="text-xs font-medium opacity-80 mb-1">
               New Collection
             </p>
@@ -95,7 +95,7 @@ function SidebarLink({ icon: Icon, label, active }: any) {
     <button
       className={`w-full flex items-center gap-4 p-4 rounded-2xl transition-all ${
         active
-          ? "bg-orange-500 text-white shadow-lg shadow-orange-200"
+          ? "bg-red-600 text-white shadow-lg shadow-orange-200"
           : "text-gray-500 hover:bg-orange-50 hover:text-orange-500"
       }`}
     >

@@ -53,7 +53,7 @@ export default function ShopClient({
 
             {/* Cart Button (Mobile Position) */}
             <Link href="/cart">
-              <button className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center shadow-orange-200 shadow-lg text-white hover:scale-110 transition-transform cursor-pointer">
+              <button className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center shadow-orange-200 shadow-lg text-white hover:scale-110 transition-transform cursor-pointer">
                 <ShoppingBag className="w-5 h-5" />
               </button>
             </Link>
@@ -74,7 +74,7 @@ export default function ShopClient({
           {/* --- DESKTOP CART (Hidden on Mobile) --- */}
           <div className="hidden md:flex gap-3">
             <Link href="/cart">
-              <button className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center shadow-orange-200 shadow-lg text-white">
+              <button className="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center shadow-orange-200 shadow-lg text-white">
                 <ShoppingBag className="w-5 h-5" />
               </button>
             </Link>

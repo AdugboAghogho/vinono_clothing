@@ -147,7 +147,7 @@ export default function ProductPage({
 
               <div className="flex items-center gap-4">
                 <p className="text-2xl font-medium text-gray-900">
-                  ${product.price}
+                 ₦{product.price},000
                 </p>
                 <div className="h-4 w-px bg-gray-300"></div>
                 <div className="flex items-center gap-1">
@@ -172,7 +172,7 @@ export default function ProductPage({
                       onClick={() => setSelectedColor(color)}
                       className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 border ${
                         selectedColor === color
-                          ? "bg-black text-white border-black"
+                          ? "bg-red-600 text-white border-red-600"
                           : "bg-white text-gray-600 border-gray-200 hover:border-gray-900"
                       }`}
                     >
@@ -194,7 +194,7 @@ export default function ProductPage({
                       onClick={() => setSelectedSize(size)}
                       className={`w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-200 border ${
                         selectedSize === size
-                          ? "bg-black text-white border-black scale-110"
+                          ? "bg-red-600 text-white border-red-600 scale-110"
                           : "bg-white text-gray-400 border-gray-200 hover:border-gray-900 hover:text-gray-900"
                       }`}
                     >
@@ -212,14 +212,14 @@ export default function ProductPage({
                 <div className="flex items-center gap-6 bg-white px-4 py-2 rounded-xl shadow-sm border border-gray-100">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="hover:text-orange-500 transition-colors"
+                    className="hover:text-red-600 transition-colors"
                   >
                     <Minus className="w-4 h-4" />
                   </button>
                   <span className="font-bold w-4 text-center">{quantity}</span>
                   <button
                     onClick={() => setQuantity(quantity + 1)}
-                    className="hover:text-orange-500 transition-colors"
+                    className="hover:text-red-600 transition-colors"
                   >
                     <Plus className="w-4 h-4" />
                   </button>
@@ -236,7 +236,7 @@ export default function ProductPage({
 
                 <Button
                   onClick={handleBuyNow}
-                  className="h-14 cursor-pointer rounded-full bg-[#FA541C] hover:bg-[#E3400D] text-white shadow-lg shadow-orange-100 border-none font-semibold text-md"
+                  className="h-14 cursor-pointer rounded-full bg-red-600 hover:bg-red-800 text-white shadow-lg shadow-orange-100 border-none font-semibold text-md"
                 >
                   Buy Now
                 </Button>
