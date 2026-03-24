@@ -104,7 +104,7 @@ export default function RootLayout({
             {/* 3. FLOATING WHATSAPP BUTTON */}
             {/* FIX 3: Changed z-100 to z-[100] */}
             <a
-              href="https://wa.me/2348106958200?text=Hello%20Vinono%20Clothing!%20I%20would%20like%20to%20make%20an%20inquiry."
+              href="https://wa.me/2348107902179?text=Hello%20Vinono%20Clothing!%20I%20would%20like%20to%20make%20an%20inquiry."
               target="_blank"
               rel="noopener noreferrer"
               className="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-[100] bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-xl shadow-[#25D366]/30 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 flex items-center justify-center"

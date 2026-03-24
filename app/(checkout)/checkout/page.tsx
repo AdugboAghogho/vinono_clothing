@@ -84,7 +84,7 @@ export default function CheckoutPage() {
         clearCart();
 
         window.open(
-          `https://wa.me/2348106958200?text=${encodeURIComponent(message)}`,
+          `https://wa.me/2348107902179?text=${encodeURIComponent(message)}`,
           "_blank",
         );
       } else {
