@@ -172,10 +172,10 @@ export default function OrderSummaryPage({ params }: PageProps) {
           </div>
         </div>
       </div>
-
+{/* 
       <p className="text-center mt-8 text-xs text-gray-400 dark:text-gray-600 uppercase tracking-[0.3em]">
         @Kels Development
-      </p>
+      </p> */}
     </div>
   );
 }

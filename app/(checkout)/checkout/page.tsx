@@ -79,12 +79,12 @@ export default function CheckoutPage() {
       if (result.success) {
         // 3. Generate WhatsApp Link using the ID from our API
         const orderLink = `${window.location.origin}/order/${result.orderId}`;
-        const message = `Hello Vinono Clothing! I've placed a new order.\n\n Order ID: ${result.orderId} \n\n View Details: ${orderLink}`;
+        const message = `Hello Vinono Clothing! I've placed a new order.\n\nOrder ID: ${result.orderId} \n\n View Details: ${orderLink}`;
 
         clearCart();
 
         window.open(
-          `https://wa.me/2347084838253?text=${encodeURIComponent(message)}`,
+          `https://wa.me/2348106958200?text=${encodeURIComponent(message)}`,
           "_blank",
         );
       } else {
