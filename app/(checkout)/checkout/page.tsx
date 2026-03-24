@@ -79,9 +79,7 @@ export default function CheckoutPage() {
       if (result.success) {
         // 3. Generate WhatsApp Link using the ID from our API
         const orderLink = `${window.location.origin}/order/${result.orderId}`;
-        const message = `Hello Vinono Clothing! I've placed a new order.\n\n
-        Order ID: ${result.orderId} \n\n
-        View Details: ${orderLink}`;
+        const message = `Hello Vinono Clothing! I've placed a new order.\n\n Order ID: ${result.orderId} \n\n View Details: ${orderLink}`;
 
         clearCart();
 
@@ -171,8 +169,7 @@ export default function CheckoutPage() {
               <div className="flex items-center gap-3">
                 <CreditCard className="w-5 h-5 text-gray-700" />
                 <span className="font-medium text-sm">
-                  Payments are processed directly with the tailor for bespoke
-                  security.
+                  Payments are processed directly with Vinono Clothing
                 </span>
               </div>
               <div className="w-4 h-4 rounded-full border-4 border-red-600 bg-white" />
