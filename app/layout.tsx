@@ -93,7 +93,7 @@ export default function RootLayout({
           >
             <Navbar />
             <Toaster />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen">{childrennnn}</main>
             <MobileNav />
 
             <script
