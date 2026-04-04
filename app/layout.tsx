@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import image1 from "../public/img/2 (3).jpeg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Vinono Clothing",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/public/img/logo.png",
         width: 1200,
         height: 630,
       },
