@@ -40,7 +40,6 @@ export default async function Home() {
               <h2 className="text-4xl  text-black dark:text-gray-300 font-bold">
                 Trending this Week
               </h2>
-              {/* Feature Item */}
               <div className="flex gap-6 items-start bg-white p-4 rounded-xl shadow-sm">
                 <div className="w-24 h-24 relative rounded-lg overflow-hidden shrink-0">
                   <Image
@@ -108,7 +107,6 @@ export default async function Home() {
               </div>
             </div>
 
-            {/* Large Feature Card */}
             <div className="relative rounded-3xl overflow-hidden min-h-100">
               <Image src={image1} alt="Model" fill className="object-cover" />
 
@@ -143,7 +141,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>  */}
 
       {/* <LatestStories posts={posts} /> */}
 
@@ -157,9 +155,9 @@ export default async function Home() {
 
       {/* 8. NEWSLETTER  */}
       {/* <SectionNewsletter />  */}
-    <h2 className="text-red-500">
-      Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES
-    </h2>
+      <h2 className="text-red-500">
+        Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES
+      </h2>
     </div>
   );
 }
