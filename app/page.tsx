@@ -21,19 +21,19 @@ export default async function Home() {
   return (
     <div className="flex flex-col gap-20 pb-5">
       {/* 1. HERO SECTION */}
-      {/* <SectionHero0 /> */}
+      <SectionHero />
 
-      {/* <SectionBrands /> */}
-      {/* <SectionOwnYourStyle /> */}
+      <SectionBrands />
+      <SectionOwnYourStyle />
 
       {/* 3. TOP COLLECTIONS  */}
-      {/* <SectionTopCollection /> */}
+      <SectionTopCollection />
 
       {/* 4. FEATURED CAROUSEL (New Section) */}
-      {/* <SectionFeatured /> */}
+      <SectionFeatured />
 
       {/* 5. LATEST STORIES -> TRENDING NOW */}
-      {/* <section className="bg-gray-50 py-20 shadow-xl">
+      <section className="bg-gray-50 py-20 shadow-xl">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-8">
@@ -141,20 +141,20 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>  */}
+      </section>
 
-      {/* <LatestStories posts={posts} /> */}
+      <LatestStories posts={posts} />
 
       {/* 6. BENEFITS MARQUEE (New Section) */}
-      {/* <SectionBenefits /> */}
+      <SectionBenefits />
 
       {/* 7. BRAND STORY */}
-      {/* <SectionBrandStory /> */}
+      <SectionBrandStory />
 
-      {/* <SectionFAQ /> */}
+      <SectionFAQ />
 
       {/* 8. NEWSLETTER  */}
-      {/* <SectionNewsletter />  */}
+      <SectionNewsletter />
       <h2 className="text-red-500">
         Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES
       </h2>

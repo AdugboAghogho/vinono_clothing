@@ -92,10 +92,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange={false}
           >
-            {/* <Navbar /> */}
+            <Navbar />
             <Toaster />
             <main className="min-h-screen">{children}</main>
-            {/* <MobileNav /> */}
+            <MobileNav />
 
             <script
               type="application/ld+json"
