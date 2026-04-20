@@ -155,9 +155,6 @@ export default async function Home() {
 
       {/* 8. NEWSLETTER  */}
       <SectionNewsletter />
-      <h2 className="text-red-500">
-        Failed to load resource: net::ERR_INSUFFICIENT_RESOURCES
-      </h2>
     </div>
   );
 }
