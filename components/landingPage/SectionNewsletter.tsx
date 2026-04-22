@@ -173,7 +173,7 @@ const SectionNewsletter = () => {
               <FooterLink href="/">Our Story</FooterLink>
               <FooterLink href="/">Sustainability</FooterLink>
               <FooterLink href="/">Careers</FooterLink>
-              <FooterLink href="/">Terms & Conditions</FooterLink>
+              <FooterLink href="/terms-and-conditions">Terms & Conditions</FooterLink>
               <FooterLink href="/">Privacy Policy</FooterLink>
             </div>
           </div>

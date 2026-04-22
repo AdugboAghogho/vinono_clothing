@@ -10,7 +10,7 @@ import SectionNewsletter from "@/components/landingPage/SectionNewsletter";
 
 export default function CartPage() {
   const { items, removeItem, updateQuantity, getTotalPrice } = useCartStore();
-  const totalPrice = getTotalPrice();
+  const totalPrice = Number(getTotalPrice()) || 0;
   const router = useRouter();
   const shipping = totalPrice > 50 ? 0 : 10;
   const tax = totalPrice * 0.05;
@@ -96,7 +96,7 @@ export default function CartPage() {
 
                   <div className="flex items-center justify-between mt-3">
                     <p className="font-bold text-gray-900">
-                      ₦{(item.price * item.quantity).toFixed(3)}
+                      ₦{((Number(item.price) || 0) * (Number(item.quantity) || 1)).toFixed(3)}
                     </p>
 
                     {/* Compact Quantity Control */}

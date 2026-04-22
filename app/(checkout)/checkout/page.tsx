@@ -13,6 +13,7 @@ import { client } from "@/lib/sanity";
 export default function CheckoutPage() {
   const [isMounted, setIsMounted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [termsAccepted, setTermsAccepted] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -44,6 +45,11 @@ export default function CheckoutPage() {
   const handleOrder = async () => {
     if (!formData.phone || !formData.address) {
       alert("Please fill in your shipping details.");
+      return;
+    }
+
+    if (!termsAccepted) {
+      alert("Please accept the Terms and Conditions to proceed.");
       return;
     }
 
@@ -221,13 +227,29 @@ export default function CheckoutPage() {
             </div>
           </div>
 
-          <div className="flex justify-between font-bold text-xl mb-6">
+          <div className="flex justify-between font-bold text-xl mb-4">
             <span>Total</span>
             <span>₦{finalTotal.toFixed(3)}</span>
           </div>
 
+          <div className="flex items-center gap-2 mb-6">
+            <input
+              type="checkbox"
+              id="terms"
+              checked={termsAccepted}
+              onChange={(e) => setTermsAccepted(e.target.checked)}
+              className="w-4 h-4 accent-red-600 cursor-pointer"
+            />
+            <label htmlFor="terms" className="text-sm text-gray-600 cursor-pointer">
+              I agree to the{" "}
+              <Link href="/terms-and-conditions" className="text-red-600 hover:underline" target="_blank">
+                Terms and Conditions
+              </Link>
+            </label>
+          </div>
+
           <Button
-            disabled={loading}
+            disabled={loading || !termsAccepted}
             onClick={handleOrder}
             className="w-full h-14 bg-red-600 text-white font-bold hover:scale-105 rounded-full cursor-pointer shadow-xl uppercase tracking-widest"
           >
