@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server';
 const privateClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  apiVersion: '2024-03-23',
+  apiVersion: '2026-03-23',
   useCdn: false,
   token: process.env.SANITY_API_TOKEN, // Secret server-side token
 });
@@ -13,7 +13,7 @@ const privateClient = createClient({
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    
+
     // Create the document in Sanity
     const result = await privateClient.create({
       _type: 'order',
